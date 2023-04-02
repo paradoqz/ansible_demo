@@ -2,8 +2,7 @@
 - s1: introduction:
     - histoire + usage + prérequis (python, ssh?) + avantage/intérêt du produit
   s2: contexte:
-    - schéma de l'infrastructure de test
-    - ./infra_test.html
+    - schéma de l'infrastructure utilisée pour la démo
   s3: principe de fonctionnement:
     - ansible.cfg, inventaire, modules, roles (cf. s10)
   s4: modules:
