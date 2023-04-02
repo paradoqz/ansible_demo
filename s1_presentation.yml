@@ -10,33 +10,34 @@
     - possible d'écrire ses propres modules
     - https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html
     - ansible-doc <module> = page de manuel
-  s5: commandes Ad-Hoc:
-        - ping, command, shell, file, teaser winrm:
-          - sur une machine
-          - sur un groupe de machines
-          - sur tout l'inventaire
-  s6: inventaire:
+  s5: inventaire:
     - machines
     - groupes
     - groupes de groupe
     - variables
-  s7: variables:
-    - scope (mais vite fait hein)
-    - decla/lecture
+  s6: commandes Ad-Hoc:
+        - ping, copy, command, shell, teaser winrm:
+          - sur tout l'inventaire (ping avec windows + centos1 foireux)
+          - sur un groupe de machines (copy / command(ls) + cat) \
+              s5_exemple1 vers ~/exemple1 --- mémo args copy > src et dest
+          - sur une machine (créer exemple 2)
+          - modules + remote access spécifiques pour windows 
+  s7: scripts Ansible - les playbooks:
+    - executer exemple1 puis checker le playbook avec le linter \
+        pour voir qu'il est pourri
+    - analyser/exécuter exemple2 + debug
+  s8: conditions et templates:
     - gathering facts
-    - debug
-  s8: conditions:
-    - déploiement apache en fonction de l'OS
-  s9: templates:
+    - déploiement apache en fonction de la distribution Linux
     - jinja2 (cf. Django, equiv twiig @php) = moteur de templating
     - déploiement index.html valorisé en fonction de l'hôte
-  s10: roles:
+  s9: roles:
     - découplage d'un playbook
     - rendre le code réutilisable
-  s11: intro awx:
+  s10: intro awx:
     - install via docker cf. Repo ansible/ansible -b 17.1 + description inventaire et exécution du playbook
-    - présentation rapide de l'interface vu admin
-  s12: awx - exécuter un playbook:
+    - présentation rapide de la console en tant qu'admin
+  s11: awx - exécuter un playbook:
     - montrer rapidement le contenu du repo
     - exécution du playbook en tant qu'opérateur
 ...

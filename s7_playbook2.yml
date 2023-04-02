@@ -1,0 +1,28 @@
+---
+- name: "Suppression des fichiers exemple"
+  hosts: linux
+  tasks:
+    - name: "Suppression de l'exemple 4"
+      file:
+        path: exemple3
+        state: absent
+
+    - name: "Suppression de l'exemple 4"
+      file:
+        path: exemple4
+        state: absent
+
+    - name: "Recherche fichiers exemple dans ~/."
+      find:
+        path: .
+        pattern: "exemple*"
+      register: res_find
+
+    - name: "Affichage contenu de la variable résultat"
+      debug:
+        var: res_find
+
+    - name: "Affichage attribut de la variable résultat"
+      debug:
+        msg: "Fichiers exemple(s) trouvé(s) : {{ res_find.matched }}"
+...

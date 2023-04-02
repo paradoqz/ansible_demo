@@ -1,0 +1,10 @@
+---
+- hosts: linux
+  tasks:
+    - copy:
+        src: ~/workspace/ansible_demo/s5_exemple1.txt
+        dest: ~/exemple3
+    - copy:
+        src: ~/workspace/ansible_demo/s5_exemple1.txt
+        dest: ~/exemple4
+...
