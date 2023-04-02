@@ -1,44 +1,43 @@
 ---
-- s1:
-    histoire + usage + prérequis (python, ssh?) + Avantages/intérêt du produit
-  s2:
-    - contexte de la démo :
-      - prévoir draw.io à l'arrache pour décrire l'Infra de test
-  s3:
-    fonctionnement:
-      - ansible.cfg, inventaire, modules, roles (a expand dans une partie découplage)
-  s4:
-    - documentation sur les modules
-  s5:
-    - commandes Ad-Hoc:
-        - modules ping, command, shell, file, teaser winrm:
+- s1: introduction:
+    - histoire + usage + prérequis (python, ssh?) + avantage/intérêt du produit
+  s2: contexte:
+    - schéma de l'infrastructure de test
+    - ./infra_test.html
+  s3: principe de fonctionnement:
+    - ansible.cfg, inventaire, modules, roles (cf. s10)
+  s4: modules:
+    - écrits en python
+    - possible d'écrire ses propres modules
+    - https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html
+    - ansible-doc <module> = page de manuel
+  s5: commandes Ad-Hoc:
+        - ping, command, shell, file, teaser winrm:
           - sur une machine
           - sur un groupe de machines
           - sur tout l'inventaire
-  s6:
-    - description de l'inventaire:
-      - machines
-      - groupes
-      - groupes de groupe
-      - variables
-  s7:
-    - les variables:
-      - scope
-      - decla/lecture
-      - gathering facts
-  s8:
-    - Les conditions:
-      - déploiement apache en fonction de l'os
-  s9:
-    - les templates:
-      - jinja2 (cf. Django, equiv twiig @‌php checker pour java) moteur de templating, déploiement index.html valorisé en fonction de l'hôte
-  s10:
-    - Les roles:
-      - découplage des playbook
-      - rendre le code réutilisable
-  s11:
-    - awx:
-      - install via docker cf. Repo ansible/ansible -b 17.1 + description inventaire et exécution du playbook
-  s12:
-    - awx: exécution de playbook depuis un repo
+  s6: inventaire:
+    - machines
+    - groupes
+    - groupes de groupe
+    - variables
+  s7: variables:
+    - scope (mais vite fait hein)
+    - decla/lecture
+    - gathering facts
+    - debug
+  s8: conditions:
+    - déploiement apache en fonction de l'OS
+  s9: templates:
+    - jinja2 (cf. Django, equiv twiig @php) = moteur de templating
+    - déploiement index.html valorisé en fonction de l'hôte
+  s10: roles:
+    - découplage d'un playbook
+    - rendre le code réutilisable
+  s11: intro awx:
+    - install via docker cf. Repo ansible/ansible -b 17.1 + description inventaire et exécution du playbook
+    - présentation rapide de l'interface vu admin
+  s12: awx - exécuter un playbook:
+    - montrer rapidement le contenu du repo
+    - exécution du playbook en tant qu'opérateur
 ...
