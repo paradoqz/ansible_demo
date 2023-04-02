@@ -28,12 +28,17 @@
     - analyser/exécuter exemple2 + debug
   s8: conditions et templates:
     - gathering facts
-    - déploiement apache en fonction de la distribution Linux
-    - jinja2 (cf. Django, equiv twiig @php) = moteur de templating
-    - déploiement index.html valorisé en fonction de l'hôte
+    - déploiement apache en fonction de la distribution Linux \
+      avec index.html valorisé en fonction de l'hôte
+      - installer le package apache
+      - déployer le fichier de conf
+      - ouvrir le port sur le firewall
+      - redémarrer apache
+      - recharger le firewall
   s9: roles:
     - découplage d'un playbook
     - rendre le code réutilisable
+    PS: import & include
   s10: intro awx:
     - install via docker cf. Repo ansible/ansible -b 17.1 + description inventaire et exécution du playbook
     - présentation rapide de la console en tant qu'admin
