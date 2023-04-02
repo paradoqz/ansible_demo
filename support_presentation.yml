@@ -1,0 +1,44 @@
+---
+- s1:
+    histoire + usage + prérequis (python, ssh?) + Avantages/intérêt du produit
+  s2:
+    - contexte de la démo :
+      - prévoir draw.io à l'arrache pour décrire l'Infra de test
+  s3:
+    fonctionnement:
+      - ansible.cfg, inventaire, modules, roles (a expand dans une partie découplage)
+  s4:
+    - documentation sur les modules
+  s5:
+    - commandes Ad-Hoc:
+        - modules ping, command, shell, file, teaser winrm:
+          - sur une machine
+          - sur un groupe de machines
+          - sur tout l'inventaire
+  s6:
+    - description de l'inventaire:
+      - machines
+      - groupes
+      - groupes de groupe
+      - variables
+  s7:
+    - les variables:
+      - scope
+      - decla/lecture
+      - gathering facts
+  s8:
+    - Les conditions:
+      - déploiement apache en fonction de l'os
+  s9:
+    - les templates:
+      - jinja2 (cf. Django, equiv twiig @‌php checker pour java) moteur de templating, déploiement index.html valorisé en fonction de l'hôte
+  s10:
+    - Les roles:
+      - découplage des playbook
+      - rendre le code réutilisable
+  s11:
+    - awx:
+      - install via docker cf. Repo ansible/ansible -b 17.1 + description inventaire et exécution du playbook
+  s12:
+    - awx: exécution de playbook depuis un repo
+...
