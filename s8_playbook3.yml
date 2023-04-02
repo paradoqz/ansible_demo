@@ -1,0 +1,17 @@
+---
+- name: Déploiement d'un site avec Apache
+  hosts: linux
+  become: yes
+  tasks:
+    - name: Installation d'Apache pour Ubuntu
+      apt:
+        name: apache2
+        state: present
+      when: ansible_distribution == "Ubuntu"
+    # modifier /etc/apache/ports.conf pour changer le 80 par X
+
+    - name: Installation d'Apache pour CentOS
+      debug:
+        msg: "{{ ansible_distribution }}"
+      when: ansible_distribution == "CentOS"
+...
