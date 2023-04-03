@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Mon site tout pourri</title>
+    <title>{{ ansible_hostname }}</title>
   </head>
   <body>
     <hr />
@@ -10,7 +10,7 @@
     <div>
       CPU : {{ ansible_processor[2] }}
       <br />
-      Nb CPU : {{ ansible_processor_cores }}
+      Cores : {{ ansible_processor_cores }}
       <br />
       Memory:
       <br />

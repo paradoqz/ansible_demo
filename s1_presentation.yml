@@ -26,7 +26,7 @@
     - executer exemple1 puis checker le playbook avec le linter \
         pour voir qu'il est pourri
     - analyser/exécuter exemple2 + debug
-  s8: conditions et templates:
+  s8: conditions, handlers et templates:
     - gathering facts
     - déploiement apache en fonction de la distribution Linux \
       avec index.html valorisé en fonction de l'hôte
@@ -36,13 +36,13 @@
       - redémarrer apache
       - recharger le firewall
   s9: roles:
+    - mémo -> créer le rôle en live
     - découplage d'un playbook
     - rendre le code réutilisable
-    PS: import & include
+    PS: import & include, m'enfin, il sera déjà 15h
   s10: intro awx:
     - install via docker cf. Repo ansible/ansible -b 17.1 + description inventaire et exécution du playbook
     - présentation rapide de la console en tant qu'admin
   s11: awx - exécuter un playbook:
-    - montrer rapidement le contenu du repo
     - exécution du playbook en tant qu'opérateur
 ...
