@@ -48,8 +48,4 @@
     - name: Debug Ouverture Firewall
       debug:
         msg: "{{res_fw}}"
-
-    
-
-
 ...
