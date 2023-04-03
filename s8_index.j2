@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Mon site tout pourri</title>
+  </head>
+  <body>
+    <hr />
+    <center>
+      <h1>VM {{ ansible_hostname }}</h1>
+    </center>
+    <div>
+      CPU : {{ ansible_processor[2] }}
+      <br />
+      Nb CPU : {{ ansible_processor_cores }}
+      <br />
+      Memory:
+      <br />
+      <ul style="list-style-type: none">
+        {% for mem,type in ansible_memory_mb.real.items() %}
+        <li>{{ mem }}: {{ type }}Mb</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
