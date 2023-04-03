@@ -40,9 +40,9 @@
     - découplage d'un playbook
     - rendre le code réutilisable
     PS: import & include, m'enfin, il sera déjà 15h
-  s10: intro awx:
+  s10: awx intro:
     - install via docker cf. Repo ansible/ansible -b 17.1 + description inventaire et exécution du playbook
     - présentation rapide de la console en tant qu'admin
   s11: awx - exécuter un playbook:
-    - exécution du playbook en tant qu'opérateur
+    - exécution du playbook demo en tant qu'opérateur
 ...
