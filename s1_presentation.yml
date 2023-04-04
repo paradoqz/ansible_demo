@@ -24,10 +24,10 @@
           - modules + remote access spécifiques pour windows 
   s7: scripts Ansible - les playbooks:
     - exécution successive de plusieurs tâches (une tâche = une commande)
-    - executer exemple1 puis checker le playbook avec le linter \
+    - executer exemple1 puis checker le playbook avec les linter yml + ansible \
         pour voir qu'il est pourri
-    - analyser/exécuter exemple2 + debug
-  s8: conditions, handlers et templates:
+    - analyser/exécuter exemple2 + utilisation du mot clef debug
+  s8: variables, conditions, handlers et templates:
     - gathering facts
     - déploiement apache en fonction de la distribution Linux \
       avec index.html valorisé en fonction de l'hôte
@@ -38,8 +38,8 @@
       - recharger le firewall
   s9: roles:
     - mémo -> créer le rôle en live
-    - découplage d'un playbook
-    - rendre le code réutilisable
+    - rôle = découplage d'un playbook
+    - objectif = rendre le code réutilisable
     PS: import & include, m'enfin, il sera déjà 15h
   s10: awx intro:
     - install via docker cf. Repo ansible/ansible -b 17.1 + description inventaire et exécution du playbook
