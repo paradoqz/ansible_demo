@@ -23,6 +23,7 @@
           - sur une machine (créer exemple 2)
           - modules + remote access spécifiques pour windows 
   s7: scripts Ansible - les playbooks:
+    - exécution successive de plusieurs tâches (une tâche = une commande)
     - executer exemple1 puis checker le playbook avec le linter \
         pour voir qu'il est pourri
     - analyser/exécuter exemple2 + debug
