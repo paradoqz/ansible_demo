@@ -8,7 +8,7 @@
   s4: modules:
     - écrits en python
     - possible d'écrire ses propres modules
-    - https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html
+    - https://docs.ansible.com/ansible/2.9/modules/modules_by_category.html
     - ansible-doc <module> = page de manuel
   s5: inventaire:
     - machines
